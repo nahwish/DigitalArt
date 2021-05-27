@@ -1,0 +1,114 @@
+.ordertitle {
+    font-size: 20px;
+    color: rgb(15, 201, 139);
+    margin-bottom: 20px;
+    span {
+        color: darkgrey;
+    }
+}
+@media screen and (max-width: 600px) {
+    .paymentMethod {
+        display: none;
+    }
+}
+.filterorders {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(70, 70, 70);
+    border: 3px solid #4e4d4d;
+    height: 50px;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    input {
+        height: 30px;
+        margin: 10px 0;
+        padding: 5px 10px;
+        background-color: #4e4d4d;
+        cursor: pointer;
+        padding: 5px 10px;
+        border: 1px solid gray;
+        border-radius: 1px;
+        color: rgb(167, 167, 167);
+        font-weight: 700;
+    }
+    .ostateselector {
+        background-color: #4e4d4d;
+        color: #747474;
+        height: 30px;
+        align-self: center;
+        margin-right: 10px;
+    }
+    button {
+        margin: 10px 0;
+        padding: 5px 10px;
+        background-color: #4e4d4d;
+        cursor: pointer;
+        padding: 5px 10px;
+        border: 1px solid gray;
+        border-radius: 2px;
+        box-shadow: 0 2px 1px 0px rgb(15, 15, 15);
+        color: rgb(167, 167, 167);
+        font-weight: 700;
+        &:hover {
+            color: rgb(15, 201, 139);
+            border-color: rgb(15, 201, 139);
+        }
+    }
+    .typesfilters {
+        .filterState {
+            height: 47px;
+            align-items: center;
+            padding: 5px 10px;
+            border: 3px solid #4e4d4d;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+.buttonseemorecontainer {
+    .titleView {
+        text-decoration: none;
+        color: rgb(15, 201, 139);
+    }
+}
+.compoEditOrder {
+    margin-top: 20px;
+    .conteinOrders {
+        color: aliceblue;
+        h4 {
+            font-size: 18px;
+            color: rgb(15, 201, 139);
+            margin-bottom: 10px;
+        }
+        .orderState {
+            h3 {
+                color: rgb(15, 201, 139);
+                margin-bottom: 10px;
+            }
+            select {
+                color: #c7c7c7;
+                background-color: #4e4d4d;
+            }
+        }
+    }
+    .oneProduct {
+        font-family: "Montserrat";
+        font-weight: 100;
+        margin: 20px 0;
+        color: #c7c7c7;
+        font-size: 14px;
+        img {
+            min-width: 300px;
+            height: auto;
+        }
+    }
+    .TOTAL {
+        font-size: 17px;
+        color: #c7c7c7;
+    }
+}

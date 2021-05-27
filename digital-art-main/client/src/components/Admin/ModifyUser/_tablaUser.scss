@@ -1,0 +1,196 @@
+.Orders {
+    width: 80%;
+}
+
+.allorders {
+    min-width: 100%;
+}
+
+.p-datatable-header {
+    display: flex;
+    align-items: flex-end;
+    height: 30px;
+    margin: 30px 0;
+    font-size: 26px;
+    font-weight: 500;
+    color: rgb(15, 201, 139);
+    .p-input-icon-left {
+        margin-left: 20px;
+        .p-inputtext {
+            color: #d6d6d4;
+            padding: 5px;
+            font-size: 16px;
+            background-color: #4e4d4d;
+            border: 1px solid rgb(101, 101, 101);
+        }
+    }
+}
+.p-datatable-wrapper {
+    font-family: "Montserrat";
+    background-color: #4e4d4d;
+    padding: 0;
+    min-width: 100%;
+    cursor: pointer;
+    table {
+        width: 100%;
+    }
+
+    th {
+        max-width: fit-content;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    td {
+        background-color: rgb(70, 70, 70);
+        text-align: center;
+        font-size: 12px;
+        padding: 5px;
+        color: #d6d6d4;
+    }
+
+    .btnDelete {
+        background-color: transparent;
+        color: rgb(167, 167, 167);
+        padding: 5px;
+        border: 1px solid gray;
+        border-radius: 2px;
+        box-shadow: 0 2px 2px rgb(29, 28, 28);
+        font-size: 12px;
+        &:hover {
+            cursor: pointer;
+            color: tomato;
+            border: 1px solid tomato;
+        }
+    }
+    .picPerfil {
+        .profileUser {
+            background-color: transparent;
+            border-radius: 9999px;
+            border: 4px double rgb(88, 143, 112);
+            box-shadow: 0 2px 2px 1px rgb(20, 20, 20);
+        }
+    }
+    .columnheader {
+        max-width: 50px;
+    }
+    .p-datatable-thead {
+        background-color: rgb(70, 70, 70);
+        tr {
+            grid-auto-columns: auto;
+            height: 30px;
+            color: rgb(15, 201, 139);
+            input {
+                font-size: 12px;
+                background-color: transparent;
+                padding: 10px 5px;
+                border: none;
+                color: #fafafa;
+                border: 1px solid #4e4d4d;
+                width: 95%;
+            }
+        }
+    }
+}
+
+.p-paginator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    button {
+        margin: 0 5px;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+}
+
+.selectRol {
+    line-height: 30px;
+    form {
+        margin: 10px 0;
+        input {
+            margin: 10px 0;
+            padding: 5px 10px;
+            background-color: #4e4d4d;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid gray;
+            border-radius: 2px;
+            box-shadow: 0 2px 1px 0px rgb(15, 15, 15);
+            color: rgb(167, 167, 167);
+            font-weight: 700;
+            &:hover {
+                color: rgb(217, 219, 54);
+                border-color: darkkhaki;
+            }
+        }
+    }
+}
+//******************************* RESPONSIVE ******************************\\
+@media screen and (max-width: 600px) {
+    .p-datatable-header {
+        justify-content: center;
+        width: 100%;
+        font-size: 20px;
+        margin: 0;
+        margin: 5px 0;
+    }
+
+    // esto se oculta en mobile porque no entra----
+    .p-datatable-wrapper {
+        margin: 0;
+        table {
+            thead {
+                tr:last-child {
+                    height: auto;
+                }
+            }
+        }
+        .Phone,
+        .picPerfil,
+        .stateUser,
+        .p-filter-column {
+            display: none;
+        }
+        //------------------------------------------
+
+        th {
+            font-size: 10px;
+            padding: 0 1px;
+        }
+
+        td {
+            font-size: 9px;
+            padding: 5px;
+            color: #d6d6d4;
+        }
+
+        .btnDelete {
+            font-size: 10px;
+        }
+
+        .columnheader {
+            max-width: 50px;
+        }
+    }
+
+    .p-paginator {
+        margin: 10px 0;
+        button {
+            margin: 0 3px;
+            padding: 0 3px;
+        }
+    }
+
+    .selectRol {
+        line-height: 10px;
+        font-size: 12px;
+        form {
+            font-size: 10px;
+            input {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
